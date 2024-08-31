@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     })
 
     // scroll and Testimonials
-    if(window.location.pathname != '/pages/form.html'){
+    if(window.location.pathname != '/HotelShowcase/pages/form.html'){
         const TESTIMONIAL_BTNS = document.querySelectorAll('.container__review_btns_btn')
         const TESTIMONIAL_TEXT = document.querySelector('.container__review_paragraph')
         const TESTIMONIAL_AUTHOR = document.querySelector('.container__review_desc')
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     }
 
     // slider
-    if(window.location.pathname == '/pages/rooms.html'){
+    if(window.location.pathname == '/HotelShowcase/pages/rooms.html'){
         $('.single-item').slick({
             inifinte: true,
             slidesToShow: 1,

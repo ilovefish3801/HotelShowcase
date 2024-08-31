@@ -1,0 +1,122 @@
+main .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  font-size: 20px;
+  font-weight: 500;
+}
+main .container__rooms_room {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 100px;
+}
+main .container__rooms_room_data {
+  display: flex;
+  position: relative;
+}
+main .container__rooms_room_data_line {
+  border: none;
+  border-left: 2px solid hsl(200, 10%, 50%);
+  position: absolute;
+  min-height: 104%;
+  max-height: 104%;
+  height: 100%;
+  width: 1px;
+  margin: 0;
+}
+main .container__rooms_room_data_content {
+  margin-left: 20px;
+}
+main .container__rooms_room_data_content_text {
+  font-size: 32px;
+  margin-top: 0;
+}
+main .container__rooms_room_data_content_paragraph {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+}
+main .container__rooms_room_data_content_btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #E0B973;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  width: 140px;
+  height: 36px;
+  cursor: pointer;
+}
+main .container__rooms_room_data_content_btn_text {
+  font-size: 14px;
+  font-weight: 600;
+}
+main .container__rooms_room_data_content_btn:hover {
+  background-color: #c79841;
+}
+main .container__rooms_room_img img {
+  max-width: 440px;
+  max-height: 440px;
+}
+main .container__rooms > div:nth-child(2) {
+  flex-direction: row-reverse;
+}
+main .container__rooms > div:nth-child(2) .container__rooms_room_data {
+  flex-direction: row-reverse;
+}
+main .container__rooms > div:nth-child(2) .container__rooms_room_data_content {
+  margin-left: 0;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  main .container .container__rooms .container__rooms_room {
+    flex-direction: column;
+    justify-content: center;
+  }
+  main .container .container__rooms .container__rooms_room .container__rooms_room_data {
+    margin-bottom: 22px;
+  }
+  main .container .container__rooms .container__rooms_room .container__rooms_room_data hr {
+    display: none;
+  }
+  main .container .container__rooms .container__rooms_room .container__rooms_room_data .container__rooms_room_data_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 800px) {
+  main .container img {
+    max-width: 420px;
+    max-height: 420px;
+  }
+}
+@media screen and (max-width: 600px) {
+  main .title {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 500px) {
+  main .title {
+    font-size: 12px;
+  }
+  main .container img {
+    max-width: 320px;
+    max-height: 320px;
+  }
+}
+@media screen and (max-width: 370px) {
+  main .title {
+    font-size: 10px;
+  }
+  main .container img {
+    max-width: 280px;
+    max-height: 280px;
+  }
+}/*# sourceMappingURL=home.css.map */

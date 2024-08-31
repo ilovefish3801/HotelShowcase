@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Hotels | Rooms</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=Raleway:wght@100;300;400;500;600;700&family=Roboto+Slab:wght@500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,900;1,700;1,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/adobe-garamond-pro-2" rel="stylesheet">
+    
+    
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    
+
+    <link rel="stylesheet" href="/styles/header_style/headerMenu.css">
+    <link rel="stylesheet" href="/styles/font_style/font.css">
+    <link rel="stylesheet" href="/styles/header_style/index.css">
+    <link rel="stylesheet" href="/styles/review_style/review.css">
+    <link rel="stylesheet" href="/styles/rooms_style/rooms.css">
+    <link rel="stylesheet" href="/styles/footer_style/footer.css">
+
+</head>
+<body class="body">
+    
+    <header style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/media/rooms/Hero_Img.jpg');">
+        
+        <div class="container">
+            
+            <div class="container__menu headerMenu">
+                <div onclick="window.location.href = '../index.html' " class="container__menu_logo garamond">
+                    LUXURY<span>HOTELS</span><span>You are on Rooms Page</span>
+                </div>
+
+                <nav class="container__menu_nav">
+                    
+                    <ul class="container__menu_nav_ul mont">
+                        <li> <a href="/index.html">Home</a></li>
+                        <li> <a href="facilities.html">Facilities</a></li>
+                        <li> <a class="selectedBTN" href="rooms.html">Rooms</a></li>
+                        <li> <a href="form.html">Contact-us</a></li>
+                    </ul>
+    
+                    <div class="container__menu_nav_burger">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </nav>
+
+            </div>
+            
+            <div class="container__text">
+                <div class="container__text_content">
+                    <div class="container__text_content_item hero_text_Welcome mont">WELCOME TO</div>
+                    <div class="container__text_content_item hero_text_Luxury garamond">LUXURY</div>
+                    <div class="container__text_content_item hero_text_Hotel garamond">HOTELS</div>
+                    <p class="container__text_content_item hero_text_Paragraph mont">Book your stay and enjoy Luxury <br>redefined at the most affordable rates.</p>
+                </div>
+            </div>
+            
+            <div class="container__bookNow">
+                <button onclick="window.location.href = 'rooms.html' " class="container__bookNow_btn">
+                    <img src="/media/header/BookNow.png" alt="" class="container__bookNow_btn_img">
+                    <div class="container__bookNow_btn_text mont" >BOOK NOW</div>
+                </button>
+            </div>
+            
+            <div class="container__scrollDown"> 
+                    <div class="container__scrollDown_text mont">Scroll</div>
+                    <div class="container__scrollDown_btn">
+                        <img class="container__scrollDown_btn_img" src="/media/header/Scroll.png" alt="">
+                    </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="mobileMenu">
+        <nav class="mobileMenu__nav">
+            <ul class="mobileMenu__nav_ul mont">
+                <li> <a href="/index.html">Home</a></li>
+                <li> <a href="facilities.html">Facilities</a></li>
+                <li> <a class="selectedBTN" href="#">Rooms</a></li>
+                <li> <a href="form.html">Contact-us</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <main>
+        
+        <div class="title garamond">ROOMS AND RATES</div>
+        <p class="desc mont">Each of our bright, light-flooded rooms come with everything you could possibly need for a comfortable stay. And yes, <span>comfort isn’t our only objective, we also value good design, sleek contemporary furnishing complemented</span><span>by the rich tones of nature’s palette as visible from our rooms’ sea-view windows and terraces.</span></p>
+
+        <div class="container">
+
+            <div class="container__rooms">
+                
+                <div class="container__rooms_room">
+                    <div class="container__rooms_room_sliderHolder">
+                        <div class="container__rooms_room_sliderHolder_slider slider single-item">
+                            <div class="container__rooms_room_sliderHolder_slider_photo"><img src="/media/rooms/slider1/photo1.jpg" alt=""></div>
+                            <div class="container__rooms_room_sliderHolder_slider_photo"><img src="/media/rooms/slider1/photo2.jpg" alt=""></div>
+                            <div class="container__rooms_room_sliderHolder_slider_photo"><img src="/media/rooms/slider1/photo3.jpg" alt=""></div>
+                        </div>
+    
+                        <div class="container__rooms_room_sliderHolder_title mont">SINGLE ROOM</div>
+                    </div>
+
+                    <div class="container__rooms_room_content">
+                        <div class="container__rooms_room_content_details">
+                            <div class="container__rooms_room_content_details_btn">⬇</div>
+                            <div class="container__rooms_room_content_details_text mont">VIEW ROOM DETAILS</div>
+                        </div>
+
+                        <button onclick="window.location.href = 'form.html' " class="container__rooms_room_content_btn mont">$147 Avg/night</button>
+                    </div>
+                    
+                    <div class="container__rooms_room_expandedDetails mont">Price: $147/night <br> Rooms: bedroom, bathroom <br> People: Suituble for 1 person</div>
+
+                </div>
+
+                <div class="container__rooms_room">
+                    <div class="container__rooms_room_sliderHolder">
+                        <div class="container__rooms_room_sliderHolder_slider slider single-item">
+                            <div class="container__rooms_room_sliderHolder_slider_photo"><img src="/media/rooms/slider2/photo1.jpg" alt=""></div>
+                            <div class="container__rooms_room_sliderHolder_slider_photo"><img src="/media/rooms/slider2/photo2.jpg" alt=""></div>
+                            <div class="container__rooms_room_sliderHolder_slider_photo"><img src="/media/rooms/slider2/photo3.jpg" alt=""></div>
+                        </div>
+    
+                        <div class="container__rooms_room_sliderHolder_title mont">DOUBLE ROOM</div>
+                    </div>
+
+                    <div class="container__rooms_room_content">
+                        <div class="container__rooms_room_content_details">
+                            <div class="container__rooms_room_content_details_btn">⬇</div>
+                            <div class="container__rooms_room_content_details_text mont">VIEW ROOM DETAILS</div>
+                        </div>
+
+                        <button onclick="window.location.href = 'form.html' " class="container__rooms_room_content_btn mont">$155 Avg/night</button>
+                    </div>
+                    
+                    <div class="container__rooms_room_expandedDetails mont">Price: $155/night <br> Rooms: bedroom, bathroom, balcony <br> People: Suituble for 2 people</div>
+
+                </div>
+
+                <div class="container__rooms_room">
+                    <div class="container__rooms_room_sliderHolder">
+                        <div class="container__rooms_room_sliderHolder_slider slider single-item">
+                            <div class="container__rooms_room_sliderHolder_slider_photo"><img src="/media/rooms/slider3/photo1.jpg" alt=""></div>
+                            <div class="container__rooms_room_sliderHolder_slider_photo"><img src="/media/rooms/slider3/photo2.jpg" alt=""></div>
+                            <div class="container__rooms_room_sliderHolder_slider_photo"><img src="/media/rooms/slider3/photo3.jpg" alt=""></div>
+                        </div>
+    
+                        <div class="container__rooms_room_sliderHolder_title mont">TWIN ROOM</div>
+                    </div>
+
+                    <div class="container__rooms_room_content">
+                        <div class="container__rooms_room_content_details">
+                            <div class="container__rooms_room_content_details_btn">⬇</div>
+                            <div class="container__rooms_room_content_details_text mont">VIEW ROOM DETAILS</div>
+                        </div>
+
+                        <button onclick="window.location.href = 'form.html' " class="container__rooms_room_content_btn mont">$170 Avg/night</button>
+                    </div>
+                    
+                    <div class="container__rooms_room_expandedDetails mont">Price: $170/night <br> Rooms: bedroom, bathroom, living room <br> People: Suituble for 2 people</div>
+
+                </div>
+                
+
+            </div>
+
+
+
+            <div class="container__review">
+                <h2 class="container__review_title garamond">Testimonials</h2>
+                <p class="container__review_paragraph mont">"Calm, Serene, Retro – What a way to relax and enjoy"</p>
+                <p class="container__review_desc mont">Mr. and Mrs. Baxter, UK</p>
+                <div class="container__review_btns">
+                    <button class="container__review_btns_btn previous"><div class="container__review_btns_btn_text">⬅</div></button>
+                    <button class="container__review_btns_btn next"><div class="container__review_btns_btn_text">➡</div></button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+
+        <div class="container">
+            
+            <div class="container__content">
+                <div onclick="window.location.href = '/index.html' " class="container__content_text garamond">
+                    LUXURY <span>HOTELS</span>
+                </div>
+                <p class="container__content_paragraph mont">497 Evergreen Rd. Roseville, CA 95673<br> +44 345 678 903<br> luxury_hotels@gmail.com</p>
+            </div>
+            
+            <nav class="container__nav">
+                <ul class="container__nav_ul">
+                    <li class="container__nav_ul_li mont"><a href="about.html">About Us</a></li>
+                    <li class="container__nav_ul_li mont"><a href="form.html">Contact</a></li>
+                    <li class="container__nav_ul_li mont"><a href="/index.html">Terms & Conditions</a></li>
+                </ul>
+            </nav>
+
+            <div class="container__mediaLinks mont">
+                <div class="container__mediaLinks_link">
+
+                    <div onclick="openInNewTab('https://facebook.com')" class="container__mediaLinks_link_img" style="background-image: url('/media/footer/facebook.png')"></div>
+                    <div class="container__mediaLinks_link_text"><a href="https://facebook.com" target="_blank">Facebook</a></div>
+
+                </div>
+                
+                <div class="container__mediaLinks_link">
+                    
+                    <div onclick="openInNewTab('https://twitter.com')" class="container__mediaLinks_link_img" style="background-image: url('/media/footer/twitter.png')"></div>
+                    <div class="container__mediaLinks_link_text"><a href="https://twitter.com" target="_blank">Twitter</a></div>
+
+                </div>
+                
+                <div class="container__mediaLinks_link">
+                    
+                    <div onclick="openInNewTab('https://instagram.com')" class="container__mediaLinks_link_img" style="background-image: url('/media/footer/instagram.png')"></div>
+                    <div class="container__mediaLinks_link_text"><a href="https://instagram.com" target="_blank">Instagram</a></div>
+
+                </div>
+            </div>
+        
+        </div>
+    </footer>
+
+    <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="/scripts/index.js"></script>
+</body>
+</html>

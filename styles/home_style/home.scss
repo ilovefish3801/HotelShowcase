@@ -1,0 +1,190 @@
+main{
+
+    .title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-top: 60px;
+
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .container{
+
+        &__rooms{
+
+            &_room{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+                margin-top: 100px;
+
+                &_data{
+
+                    display: flex;
+
+                    position: relative;
+            
+                    &_line{
+                        border:         none;
+                        border-left:    2px solid hsla(200, 10%, 50%,100);
+                        
+                        position: absolute;
+
+                        min-height: 104%;
+                        max-height: 104%;
+
+                        height:         100%;
+                        width:          1px; 
+                        
+                        margin: 0;
+                    }
+            
+                    &_content{
+                        margin-left: 20px;
+                        &_text{
+                            font-size: 32px;
+                
+                            margin-top: 0;
+                        }
+                        
+                        
+                        
+                        &_paragraph{
+                            font-weight: 500;
+                            font-size: 14px;
+                
+                            line-height: 24px;
+                        }
+                
+                        &_btn{
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-around;
+                            
+                            background-color: #E0B973;
+                            color: #fff;
+                
+                            border: none;
+                            border-radius: 8px;
+                
+                            width: 140px;
+                            height: 36px;
+                
+                            cursor: pointer;
+                
+                            &_text{
+                                font-size: 14px;
+                                font-weight: 600;
+                            }
+                        }
+                
+                        &_btn:hover{
+                            background-color: #c79841;
+                        }
+                    }
+                }
+                &_img{
+       
+                    img{
+                        max-width: 440px;
+                        max-height: 440px;
+                    }
+                 }
+            }
+        }
+        
+        &__rooms>div:nth-child(2){
+            flex-direction: row-reverse;
+
+            .container__rooms_room_data{
+                flex-direction: row-reverse;
+            }
+
+            .container__rooms_room_data_content{
+                margin-left: 0;
+                margin-right: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    main{
+        .container{
+            .container__rooms{
+
+                .container__rooms_room{
+                    flex-direction: column;
+                    justify-content: center;
+
+                    .container__rooms_room_data{
+                        margin-bottom: 22px;
+                        hr{
+                            display: none;
+                        }
+
+                        .container__rooms_room_data_content{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    main{
+        .container{
+            img{
+                max-width: 420px;
+                max-height: 420px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main{
+        .title{
+            font-size: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    main{
+        .title{
+            font-size: 12px;
+        }
+        .container{
+            img{
+                max-width: 320px;
+                max-height: 320px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 370px) {
+    main{
+        .title{
+            font-size: 10px;
+        }
+        .container{
+            img{
+                max-width: 280px;
+                max-height: 280px;
+            }
+        }
+    }
+}

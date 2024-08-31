@@ -1,0 +1,201 @@
+main {
+  margin-top: 100px;
+}
+main .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 32px;
+}
+main .desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+main .container__rooms {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .container__rooms_room {
+  border: 1px solid black;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  max-width: 640px;
+  height: 500px;
+  margin-top: 50px;
+}
+main .container__rooms_room_sliderHolder {
+  position: relative;
+}
+main .container__rooms_room_sliderHolder_slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .container__rooms_room_sliderHolder_slider_photo img {
+  width: 640px;
+  height: 440px;
+  max-width: 640px;
+  max-height: 440px;
+  position: relative;
+}
+main .container__rooms_room_sliderHolder_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  background-color: #14274A;
+  font-size: 32px;
+  font-weight: 600;
+  width: 640px;
+}
+main .container__rooms_room_content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+}
+main .container__rooms_room_content_details {
+  display: flex;
+  align-items: center;
+}
+main .container__rooms_room_content_details_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #E0B973;
+  color: #fff;
+  font-weight: 900;
+  font-size: 22px;
+  cursor: pointer;
+}
+main .container__rooms_room_content_details_btn:hover {
+  background-color: #c79841;
+}
+main .container__rooms_room_content_details_text {
+  font-weight: 600;
+}
+main .container__rooms_room_content_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #E0B973;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  width: 140px;
+  height: 36px;
+  cursor: pointer;
+  margin-right: 10px;
+  font-weight: 600;
+}
+main .container__rooms_room_content_btn:hover {
+  background-color: #c79841;
+}
+main .container__rooms_room_expandedDetails {
+  margin-left: 68px;
+  max-width: 230px;
+  display: none;
+}
+main .container__rooms_room_expandedDetails.active {
+  display: block;
+}
+main .container__rooms .slider .slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .container__rooms .slider .slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 30px;
+  padding: 0;
+}
+main .container__rooms .slider .slick-dots li {
+  list-style: none;
+}
+main .container__rooms .slider .slick-dots li.slick-active button {
+  background-color: #ffffff;
+}
+main .container__rooms .slider .slick-dots button {
+  font-size: 0;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: transparent;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 1000px) {
+  main .desc {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 720px) {
+  main .desc {
+    font-size: 8px;
+  }
+  main .container__rooms_room {
+    width: 400px;
+    height: 380px;
+  }
+  main .container__rooms_room_sliderHolder_slider_photo img {
+    max-width: 400px;
+    max-height: 300px;
+  }
+  main .container__rooms_room_sliderHolder_title {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 500px) {
+  main .desc {
+    font-size: 6px;
+  }
+  main .container__rooms_room {
+    width: 300px;
+    height: 280px;
+  }
+  main .container__rooms_room_sliderHolder_slider_photo img {
+    max-width: 300px;
+    max-height: 200px;
+  }
+  main .container__rooms_room_sliderHolder_title {
+    width: 300px;
+    font-size: 16px;
+  }
+  main .container__rooms_room_expandedDetails {
+    margin: 0;
+  }
+  main .container__rooms_room_content_details_btn {
+    width: 20px;
+    height: 20px;
+    font-size: 16px;
+    margin-right: 4px;
+  }
+  main .slider .slick-dots {
+    bottom: 10px !important;
+  }
+}
+@media screen and (max-width: 400px) {
+  main .desc {
+    font-size: 5px;
+  }
+}/*# sourceMappingURL=rooms.css.map */
